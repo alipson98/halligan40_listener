@@ -20,10 +20,7 @@ def get_end_of_queue():
 
 def get_utln(line):
     utln = re.search(r'\((.*)\)', line)
-    if utln:
-        return utln.group(0)
-    else:
-        return None
+    return utln.group(0) if utln else None
 
 def alert(line):
     # add whatever alert prints or noises you would like
@@ -42,7 +39,6 @@ if __name__ == "__main__":
         time.sleep(5)
         test_end = get_end_of_queue()
         test_utln = get_utln(test_end)
-        print(test_utln)
         if (not test_utln): # queue empty
             curr_utln = None
             curr_end = None
