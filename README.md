@@ -15,5 +15,5 @@ This program must run locally for text to speech to work, so it needs to ssh int
 
 Alternatively, if you don't want to add an ssh key, you could edit the script to expect and enter your password.
 
-# Bugs
+### Bugs
 This will report a new request if there are multiple people on the queue and the person at the end of the queue removes themself. 
