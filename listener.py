@@ -10,7 +10,7 @@ engine = pyttsx3.init()
 engine.setProperty('rate', 180)
 
 # fill in with your login information before you run
-user = 'alipso01'
+user = ''
 
 check_cmd = "ssh {}@homework.cs.tufts.edu \"halligan40 check_queue\"".format(user)
 
