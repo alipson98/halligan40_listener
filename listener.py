@@ -10,7 +10,7 @@ engine = pyttsx3.init()
 engine.setProperty('rate', 180)
 
 # fill in with your login information before you run
-user = 'alipso01'
+user = ''
 
 check_cmd = "ssh {}@homework.cs.tufts.edu \"halligan40 check_queue\"".format(user)
 
@@ -31,6 +31,10 @@ def alert(line):
 
 
 if __name__ == "__main__":
+    if (not user):
+        print("Username is not specified. Edit this file with your EECS username\n")
+        exit()
+    
     init_end = get_end_of_queue()
     print(init_end)
     curr_utln = get_utln(init_end)
