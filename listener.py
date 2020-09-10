@@ -40,7 +40,7 @@ if __name__ == "__main__":
     curr_utln = get_utln(init_end)
 
     while (True):
-        time.sleep(5)
+        time.sleep(15)
         test_end = get_end_of_queue()
         test_utln = get_utln(test_end)
         if (not test_utln): # queue empty
