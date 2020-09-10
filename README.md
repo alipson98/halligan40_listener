@@ -11,7 +11,7 @@ Edit listener.py and add your EECS username (utln)
 Run listener.py with python3
 
 ### SSH setup
-This program must run locally for text to speech to work, so it needs to ssh into the Halligan server to run `halligan40`. This script assumes that you already have an ssh key set up locally and have added the public key to the Halligan server. See https://www.ssh.com/ssh/keygen/ for more on ssh keys. If your setup is correct, you will be able to run `ssh [username]@homework.cs.tufts.edu "halligan40 check_queue"` and see the current queue.
+This program must run locally for text to speech to work, so it needs to ssh into the Halligan server to run `halligan40`. This script assumes that you already have an ssh key set up locally and have added the public key to the Halligan server. See https://www.ssh.com/ssh/keygen/ for more on ssh keys. If your setup is correct, you will be able to run `ssh [username]@homework.cs.tufts.edu "halligan40 check_queue"` and see the current queue without needing to enter a password.
 
 Alternatively, if you don't want to add an ssh key, you could edit the script to expect and enter your password.
 
